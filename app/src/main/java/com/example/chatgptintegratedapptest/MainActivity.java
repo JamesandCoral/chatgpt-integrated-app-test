@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization", "Bearer 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")
+                .header   //api key is removed
                 .post(body)
                 .build();
 
